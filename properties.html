@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
 
-    <title>Propiedades - Página básica 6</title>
+    <title>Propiedades - Página b6</title>
   </head>
 
   <body>
@@ -77,27 +77,28 @@
                 <div class="col-md-6">
                   <div class="form-group">
                     <select class="form-control" id="propertyType">
-                      <option>Tipo de Propiedad</option>
-                      <option>Tipo de Propiedad 1</option>
-                      <option>Tipo de Propiedad 2</option>
-                      <option>Tipo de Propiedad 3</option>
+                      <option selected>Tipo de Propiedad</option>
+                      <option value="">Casa</option>
+                      <option value="">Departamento</option>
+                      <option value="">Parcelo</option>
                     </select>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
                     <select class="form-control" id="operationType">
-                      <option>Tipo de operación</option>
-                      <option>Tipo de operación 1</option>
-                      <option>Tipo de operación 2</option>
-                      <option>Tipo de operación 3</option>
+                      <option selected>Tipo de operación</option>
+                      <option value="">Venta</option>
+                      <option value="">Arriendo</option>
+                      <option value="">Arriendo temporal</option>
+                     
                     </select>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
                     <select class="form-control" id="region">
-                      <option>Región</option>
+                      <option selected>Región</option>
                       <option>Región 1</option>
                       <option>Región 2</option>
                       <option>Región 3</option>
@@ -108,10 +109,10 @@
                 <div class="col-md-6">
                   <div class="form-group">
                     <select class="form-control" id="city">
-                      <option>Ciudad</option>
-                      <option>Ciudad 1</option>
-                      <option>Ciudad 2</option>
-                      <option>Ciudad 3</option>
+                      <option selected>Comuna</option>
+                      <option>Comuna 1</option>
+                      <option>Comuna 2</option>
+                      <option>Comuna 3</option>
                     </select>
                   </div>
                 </div>
@@ -120,9 +121,10 @@
                   <div class="form-group">
                     <select class="form-control" id="bedrooms">
                       <option>Habitaciones</option>
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
+                      <option value="">1</option>
+                      <option value="">2</option>
+                      <option value="">3</option>
+                  
                     </select>
                   </div>
                 </div>
@@ -131,9 +133,9 @@
                   <div class="form-group">
                     <select class="form-control" id="bathrooms">
                       <option>Baños</option>
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
+                      <option value="">1</option>
+                      <option value="">2</option>
+                      <option value="">3</option>
                     </select>
                   </div>
                 </div>
@@ -141,10 +143,10 @@
                 <div class="col-md-6">
                   <div class="form-group">
                     <select class="form-control" id="bathrooms">
-                      <option>Estacionamientos</option>
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
+                      <option selected>Estacionamientos</option>
+                      <option value="">1</option>
+                      <option value="">2</option>
+                      <option value="">3</option>
                     </select>
                   </div>
                 </div>
@@ -229,7 +231,7 @@
       </div>
     </div>
 
-    <div class="section-color section-properties" style="margin-top: -130px;">
+    <div class="section-color section-properties" style="margin-top: -130px; height: 100vh;">
       <div class="container">
         <div class="row text-center justify-content-center mb-3">
           <div class="col-lg-7">
@@ -237,7 +239,7 @@
           </div>
         </div>
         <div class="row mb-5">
-          <div class="col-lg-5">
+          <div class="col-lg-3">
             <div class="properties-meta">
               <span>De 1 a 64 propiedades</span>
             </div>
@@ -249,20 +251,42 @@
               </div>
               <div class="col">
                 <div class="set-view-properties">
-                  <form>
                     <div class="position-relative ">
                       <select
                         class="form-select"
                         aria-label="Default select example"
                         style="margin-left: 4px;"
                       >
-                        <option selected>Relevancia </option>
-                        <option value="1">Importante</option>
-                        <option value="2">Importante</option>
-                        <option value="3">Importante</option>
+                        <option selected>Seleccionar </option>
+                        <option value="1">Mayor a menor</option>
+                        <option value="2">Menor a mayor</option>
                       </select>
                     </div>
-                  </form>
+              
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="row">
+              <div class="col-sm-5">
+                <span style="font-size: 16px;width: max-content;">Ver: </span>
+              </div>
+              <div class="col">
+                <div class="set-view-properties">
+                
+                    <div class="position-relative ">
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                        style="margin-left: 4px;"
+                      >
+                        <option value="1">3</option>
+                        <option value="1" selected>6</option>
+                        <option value="2">9</option>
+                      </select>
+                    </div>
+            
                 </div>
               </div>
             </div>
@@ -353,7 +377,7 @@
                       UF 16.800
                     </h3>
 
-                    <a href="property-details.html" class="btn btn-dark"
+                    <a href="property-details.html" class="btn btn-dark" target="_blank"
                       >Ver más...</a
                     >
                   </div>
@@ -386,7 +410,7 @@
                       UF 16.800
                     </h3>
 
-                    <a href="property-details.html" class="btn btn-dark"
+                    <a href="property-details.html" class="btn btn-dark" target="_blank"
                       >Ver más...</a
                     >
                   </div>
@@ -419,7 +443,7 @@
                       UF 16.800
                     </h3>
 
-                    <a href="property-details.html" class="btn btn-dark"
+                    <a href="property-details.html" class="btn btn-dark" target="_blank"
                       >Ver más...</a
                     >
                   </div>
@@ -452,7 +476,7 @@
                       UF 16.800
                     </h3>
 
-                    <a href="property-details.html" class="btn btn-dark"
+                    <a href="property-details.html" class="btn btn-dark" target="_blank"
                       >Ver más...</a
                     >
                   </div>
@@ -485,7 +509,7 @@
                       UF 16.800
                     </h3>
 
-                    <a href="property-details.html" class="btn btn-dark"
+                    <a href="property-details.html" class="btn btn-dark" target="_blank"
                       >Ver más...</a
                     >
                   </div>
@@ -493,176 +517,6 @@
               </div>
             </div>
             <br />
-            <div class="section-header-properties">
-              <h3 class="title-carousel-properties">Departamentos</h3>
-            </div>
-            <div class="owl-carousel owl-3-slider">
-              <div class="item">
-                <div class="card" style="width: 20rem">
-                  <span class="uf-item-price">Departamento / Arriendo</span>
-                  <img
-                    class="card-img-top img-fluid card-img"
-                    src="./images/property/property-1.jpg"
-                    alt="Card image cap"
-                  />
-                  <div class="card-body">
-                    <h3 class="card-title">
-                      Casa Amoblada, excelente ubicación
-                    </h3>
-                    <small class="card-text-small"
-                      >La Cruz, Valparaiso, Chile</small
-                    >
-                    <div class="info-property">
-                      <span class="card-more-info">Habitaciones: 1</span>
-                      <span class="card-more-info">Baños: 1</span>
-                    </div>
-                    <h3
-                      class="card-title"
-                      style="font-size: 28px; font-weight: 700"
-                    >
-                      UF 16.800
-                    </h3>
-                    >
-
-                    <a href="property-details.html" class="btn btn-dark"
-                      >Ver más...</a
-                    >
-                  </div>
-                </div>
-              </div>
-
-              <div class="item">
-                <div class="card" style="width: 20rem">
-                  <span class="uf-item-price">Departamento / Arriendo</span>
-                  <img
-                    class="card-img-top img-fluid card-img"
-                    src="./images/property/property-1.jpg"
-                    alt="Card image cap"
-                  />
-                  <div class="card-body">
-                    <h3 class="card-title">
-                      Casa Amoblada, excelente ubicación
-                    </h3>
-                    <small class="card-text-small"
-                      >La Cruz, Valparaiso, Chile</small
-                    >
-                    <div class="info-property">
-                      <span class="card-more-info">Habitaciones: 1</span>
-                      <span class="card-more-info">Baños: 1</span>
-                    </div>
-                    <h3
-                      class="card-title"
-                      style="font-size: 28px; font-weight: 700"
-                    >
-                      UF 16.800
-                    </h3>
-
-                    <a href="property-details.html" class="btn btn-dark"
-                      >Ver más...</a
-                    >
-                  </div>
-                </div>
-              </div>
-
-              <div class="item">
-                <div class="card" style="width: 20rem">
-                  <span class="uf-item-price">Departamento / Arriendo</span>
-                  <img
-                    class="card-img-top img-fluid card-img"
-                    src="./images/property/property-1.jpg"
-                    alt="Card image cap"
-                  />
-                  <div class="card-body">
-                    <h3 class="card-title">
-                      Casa Amoblada, excelente ubicación
-                    </h3>
-                    <small class="card-text-small"
-                      >La Cruz, Valparaiso, Chile</small
-                    >
-                    <div class="info-property">
-                      <span class="card-more-info">Habitaciones: 1</span>
-                      <span class="card-more-info">Baños: 1</span>
-                    </div>
-                    <h3
-                      class="card-title"
-                      style="font-size: 28px; font-weight: 700"
-                    >
-                      UF 16.800
-                    </h3>
-
-                    <a href="property-details.html" class="btn btn-dark"
-                      >Ver más...</a
-                    >
-                  </div>
-                </div>
-              </div>
-
-              <div class="item">
-                <div class="card" style="width: 20rem">
-                  <span class="uf-item-price">Departamento / Arriendo</span>
-                  <img
-                    class="card-img-top img-fluid card-img"
-                    src="./images/property/property-1.jpg"
-                    alt="Card image cap"
-                  />
-                  <div class="card-body">
-                    <h3 class="card-title">
-                      Casa Amoblada, excelente ubicación
-                    </h3>
-                    <small class="card-text-small"
-                      >La Cruz, Valparaiso, Chile</small
-                    >
-                    <div class="info-property">
-                      <span class="card-more-info">Habitaciones: 1</span>
-                      <span class="card-more-info">Baños: 1</span>
-                    </div>
-                    <h3
-                      class="card-title"
-                      style="font-size: 28px; font-weight: 700"
-                    >
-                      UF 16.800
-                    </h3>
-
-                    <a href="property-details.html" class="btn btn-dark"
-                      >Ver más...</a
-                    >
-                  </div>
-                </div>
-              </div>
-
-              <div class="item">
-                <div class="card" style="width: 20rem">
-                  <span class="uf-item-price">Departamento / Arriendo</span>
-                  <img
-                    class="card-img-top img-fluid card-img"
-                    src="./images/property/property-1.jpg"
-                    alt="Card image cap"
-                  />
-                  <div class="card-body">
-                    <h3 class="card-title">
-                      Casa Amoblada, excelente ubicación
-                    </h3>
-                    <small class="card-text-small"
-                      >La Cruz, Valparaiso, Chile</small
-                    >
-                    <div class="info-property">
-                      <span class="card-more-info">Habitaciones: 1</span>
-                      <span class="card-more-info">Baños: 1</span>
-                    </div>
-                    <h3
-                      class="card-title"
-                      style="font-size: 28px; font-weight: 700"
-                    >
-                      UF 16.800
-                    </h3>
-
-                    <a href="property-details.html" class="btn btn-dark"
-                      >Ver más...</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
            <!-- fin card tarjetas -->
           <!-- Card lista -->
@@ -708,7 +562,7 @@
                       UF 16.800
                     </h3>
 
-                    <a href="property-details.html" class="btn btn-dark"
+                    <a href="property-details.html" class="btn btn-dark" target="_blank"
                       >Ver más...</a
                     >
                   </div>
@@ -747,7 +601,7 @@
                       UF 16.800
                     </h3>
 
-                    <a href="property-details.html" class="btn btn-dark"
+                    <a href="property-details.html" class="btn btn-dark" target="_blank"
                       >Ver más...</a
                     >
                   </div>
@@ -786,7 +640,7 @@
                       UF 16.800
                     </h3>
 
-                    <a href="property-details.html" class="btn btn-dark"
+                    <a href="property-details.html" class="btn btn-dark" target="_blank"
                       >Ver más...</a
                     >
                   </div>
@@ -825,7 +679,7 @@
                       UF 16.800
                     </h3>
 
-                    <a href="property-details.html" class="btn btn-dark"
+                    <a href="property-details.html" class="btn btn-dark" target="_blank"
                       >Ver más...</a
                     >
                   </div>
@@ -864,7 +718,7 @@
                       UF 16.800
                     </h3>
 
-                    <a href="property-details.html" class="btn btn-dark"
+                    <a href="property-details.html" class="btn btn-dark" target="_blank"
                       >Ver más...</a
                     >
                   </div>
@@ -874,170 +728,6 @@
               </div>
             </div>
             <!-- fin categoria casa -->
-    
-            <!-- categoria depart -->
-            <div class="section-header-properties">
-              <h3 class="title-carousel-properties">Departamento</h3>
-            </div>
-            <div class="owl-carousel owl-3-slider">
-              <div class="item">
-                <div class="card" style="width:100%;">
-                <div class="row">
-                  <div class="col-sm-5">
-                    <span class="uf-item-price" style="font-size: 12px;margin-right: 13px;">Depto / Arriendo</span>
-                    <img
-                      class="card-img-top img-fluid card-img"
-                      src="./images/property/property-1.jpg"
-                      alt="Card image cap"
-                      style=" height: 100% !important;"
-                    />
-                  </div>       
-                  <div class="col-sm-7">            
-                  <div class="card-body text-left">
-                    <h4 class="card-title " style="font-size: 18px;">
-                      Departamento Amoblada, excelente ubicación
-                    </h4>
-                    <small class="card-text-small"
-                      >La Cruz, Valparaiso, Chile</small
-                    >
-                    <div class="info-property">
-                      <span class="card-more-info">Habitaciones: 1</span>
-                      <span class="card-more-info">Baños: 1</span>
-                    </div>
-                    <h3
-                      class="card-title"
-                      style="font-size: 20px; font-weight: 700"
-                    >
-                      UF 16.800
-                    </h3>
-
-                    <a href="property-details.html" class="btn btn-dark"
-                      >Ver más...</a
-                    >
-                  </div>
-                  </div>
-                </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="card" style="width:100%;">
-                <div class="row">
-                  <div class="col-sm-5">
-                    <span class="uf-item-price" style="font-size: 12px;margin-right: 13px;">Depto / Arriendo</span>
-                    <img
-                      class="card-img-top img-fluid card-img"
-                      src="./images/property/property-1.jpg"
-                      alt="Card image cap"
-                      style=" height: 100% !important;"
-                    />
-                  </div>       
-                  <div class="col-sm-7">            
-                  <div class="card-body text-left">
-                    <h4 class="card-title " style="font-size: 18px;">
-                      Departamento Amoblada, excelente ubicación
-                    </h4>
-                    <small class="card-text-small"
-                      >La Cruz, Valparaiso, Chile</small
-                    >
-                    <div class="info-property">
-                      <span class="card-more-info">Habitaciones: 1</span>
-                      <span class="card-more-info">Baños: 1</span>
-                    </div>
-                    <h3
-                      class="card-title"
-                      style="font-size: 20px; font-weight: 700"
-                    >
-                      UF 16.800
-                    </h3>
-
-                    <a href="property-details.html" class="btn btn-dark"
-                      >Ver más...</a
-                    >
-                  </div>
-                  </div>
-                </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="card" style="width:100%;">
-                <div class="row">
-                  <div class="col-sm-5">
-                    <span class="uf-item-price" style="font-size: 12px;margin-right: 13px;">Depto / Arriendo</span>
-                    <img
-                      class="card-img-top img-fluid card-img"
-                      src="./images/property/property-1.jpg"
-                      alt="Card image cap"
-                      style=" height: 100% !important;"
-                    />
-                  </div>       
-                  <div class="col-sm-7">            
-                  <div class="card-body text-left">
-                    <h4 class="card-title " style="font-size: 18px;">
-                      Departamento Amoblada, excelente ubicación
-                    </h4>
-                    <small class="card-text-small"
-                      >La Cruz, Valparaiso, Chile</small
-                    >
-                    <div class="info-property">
-                      <span class="card-more-info">Habitaciones: 1</span>
-                      <span class="card-more-info">Baños: 1</span>
-                    </div>
-                    <h3
-                      class="card-title"
-                      style="font-size: 20px; font-weight: 700"
-                    >
-                      UF 16.800
-                    </h3>
-
-                    <a href="property-details.html" class="btn btn-dark"
-                      >Ver más...</a
-                    >
-                  </div>
-                  </div>
-                </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="card" style="width:100%;">
-                <div class="row">
-                  <div class="col-sm-5">
-                    <span class="uf-item-price" style="font-size: 12px;margin-right: 13px;">Depto / Arriendo</span>
-                    <img
-                      class="card-img-top img-fluid card-img"
-                      src="./images/property/property-1.jpg"
-                      alt="Card image cap"
-                      style=" height: 100% !important;"
-                    />
-                  </div>       
-                  <div class="col-sm-7">            
-                  <div class="card-body text-left">
-                    <h4 class="card-title " style="font-size: 18px;">
-                      Departamento Amoblada, excelente ubicación
-                    </h4>
-                    <small class="card-text-small"
-                      >La Cruz, Valparaiso, Chile</small
-                    >
-                    <div class="info-property">
-                      <span class="card-more-info">Habitaciones: 1</span>
-                      <span class="card-more-info">Baños: 1</span>
-                    </div>
-                    <h3
-                      class="card-title"
-                      style="font-size: 20px; font-weight: 700"
-                    >
-                      UF 16.800
-                    </h3>
-
-                    <a href="property-details.html" class="btn btn-dark"
-                      >Ver más...</a
-                    >
-                  </div>
-                  </div>
-                </div>
-                </div>
-              </div>
-            </div>
-            <!-- fin categoria depart -->
           </div>
           <div
             class="tab-pane fade"
@@ -1045,7 +735,27 @@
             role="tabpanel"
             aria-labelledby="map-tab"
           >
-            jeeejee
+          <section class="container" style="height: 100vh;">
+            <div class="iframe-rwd">
+              <iframe
+                width="425"
+                height="350"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+                src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Seattle,+WA&amp;aq=0&amp;oq=seattle&amp;sll=37.822293,-85.76824&amp;sspn=6.628688,16.907959&amp;t=h&amp;ie=UTF8&amp;hq=&amp;hnear=Seattle,+King,+Washington&amp;z=11&amp;ll=47.60621,-122.332071&amp;output=embed"
+              ></iframe
+              ><br /><small
+                ><a
+                  href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Seattle,+WA&amp;aq=0&amp;oq=seattle&amp;sll=37.822293,-85.76824&amp;sspn=6.628688,16.907959&amp;t=h&amp;ie=UTF8&amp;hq=&amp;hnear=Seattle,+King,+Washington&amp;z=11&amp;ll=47.60621,-122.332071"
+                  style="color: #0000ff; text-align: left"
+                  >View Larger Map</a
+                ></small
+              >
+            </div>
+          </section>
+            
           </div>
         </div>
       </div>
@@ -1124,22 +834,22 @@
             <div class="social-media">
               <ul>
                 <li>
-                  <a href="/index.html">
+                  <a href="/index.html" target="_blank"> 
                     <i class="icon-linkedin"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="/index.html">
+                  <a href="/index.html" target="_blank">
                     <i class="icon-instagram"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="/index.html">
+                  <a href="/index.html" target="_blank">
                     <i class="icon-twitter"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="/index.html">
+                  <a href="/index.html" target="_blank">
                     <i class="icon-facebook"></i>
                   </a>
                 </li>

@@ -2265,20 +2265,28 @@ iframe {
   padding: 0.5rem 3rem;
   font-size: 1rem;
 }
-
-@media (min-width: 768px) {
-  .section-intranet .container form,
-  .section-contact .container form {
-    width: 50%;
-    padding: 5rem;
-  }
-}
 @media (max-width: 1325px){
   .section-contact .container form {
     width: 80%;
     padding: 2rem;
   }
 }
+
+@media (min-width: 768px) {
+  .section-intranet .container form,
+  .section-contact .container form {
+    width: 100%;
+    padding: 5rem;
+  }
+}
+@media (min-width: 370px) {
+  .section-intranet .container form,
+  .section-contact .container form {
+    width: 100%;
+    padding: 5rem;
+  }
+}
+
 
 .btnNavActive{
   background: rgb(22, 22, 22); 
